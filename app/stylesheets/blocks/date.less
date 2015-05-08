@@ -1,0 +1,50 @@
+.date {
+  vertical-align: top;
+  font-family: @font-family-serif;
+  text-align: center;
+  width: 25%;
+  height: 104px;
+  &__background{
+    background-color: rgba(255, 255, 255, 0.8);
+    height: inherit;
+  }
+  &__day{
+    font-size: 36px;
+    position: relative;
+    padding-top: 18px;
+    line-height: 40px;
+    &:after{
+      content: "";
+      position: absolute;
+      margin-top: -4px;
+      bottom: 14px;
+      right: 19px;
+      width: 0;
+      height: 0;
+      border-top: 2px solid transparent;
+      border-left: 4px solid #000;
+      border-bottom: 2px solid transparent;
+      bottom: 18px;
+      @media (min-width: 0) and (max-width: @screen-md-min){
+        bottom: 8px;
+        right: 8px;
+      }
+    }
+  }
+  &__month{
+    font-size: 18px;
+    letter-spacing: 0.7px;
+    @media (min-width: 0) and (max-width: @screen-md-min){
+      font-size: 14px;
+    }
+  }
+  @media (min-width: 0) and (max-width: @screen-md-min){
+    height: 54px;
+    &__day {
+      font-size: 18px;
+      line-height: 20px;
+      margin: 0;
+      padding-top: 10px;
+    }
+  }
+}

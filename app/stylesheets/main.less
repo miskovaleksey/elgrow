@@ -1,0 +1,21 @@
+@import "variables.less";
+@import "normalize.less";
+@import "grid.less";
+@import "header.less";
+
+@import "blocks/date.less";
+@import "blocks/main-photo.less";
+@import "blocks/content.less";
+@import "blocks/nav.less";
+
+
+* {box-sizing: border-box;}
+
+body {
+  font-family: @font-family-sans-serif;
+  padding: 32px 0 100px;
+  min-width: 320px;
+  @media (min-width: 0) and (max-width: @screen-sm-min){
+    padding-top:22px;
+  }
+}

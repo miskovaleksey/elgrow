@@ -1,0 +1,42 @@
+.pagination {
+  .container();
+  margin-top: 10px;
+  padding: 0 10px;
+  height: 34px;
+  font-size: 13px;
+  height: 34px;
+  line-height: 34px;
+  vertical-align: middle;
+  &__name{
+    display: inline-block;
+    color: #848484;
+    margin-right: 5px;
+    @media (min-width: 0) and (max-width: @screen-sm-min){
+      display: none;
+    }
+  }
+  &__pages{
+    display: inline-block;
+    margin: 0 10px;
+    @media (min-width: 0) and (max-width: @screen-sm-min){
+      margin-left: 0;
+    }
+    .page{
+      color: #000;
+      text-decoration: none;
+      padding: 9px 14px;
+      margin: 0px 4px;
+      outline: 0;
+      &.active {
+        background-color: #e6e6e6;
+        border-radius: 100%;
+        font-weight: 700;
+      }
+    }
+  }
+  &__next{
+    display: inline-block;
+    color: #000;
+    text-decoration: none;
+  }
+}

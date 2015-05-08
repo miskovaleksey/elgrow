@@ -1,0 +1,75 @@
+.main-photo{
+  .container();
+  position: relative;
+  font-size: 13px;
+  line-height: 18px;
+  margin-bottom: 15px;
+  @media (min-width: @screen-sm-min) and (max-width: @screen-md-min){
+    margin-bottom: 10px;
+  }
+  @media (min-width: 0) and (max-width: @screen-sm-min){
+    margin-bottom: 0px;
+  }
+  figure{
+    margin: 0px 0px 9px 0px;
+    position: relative;
+    padding: 0 10px;
+    width: 100%;
+    @media (min-width: 0) and (max-width: @screen-md-min){
+      margin-bottom: 0px;
+    }
+    .image{
+      max-width: 100%;
+      max-height: 100%;
+      width: 100%;
+    }
+    &:after{
+      content: "";
+      position: absolute;
+      left: 50%;
+      margin-left: -8px;
+      bottom: 4px;
+      width: 0;
+      height: 0;
+      border-left: 8px solid transparent;
+      border-right: 8px solid transparent;
+      border-bottom: 10px solid #fff;
+      @media (min-width: 0) and (max-width: @screen-md-min){
+        display: none;
+      }
+    }
+  }
+  .date{
+    position: absolute;
+    left: 30px;
+    top: 20px;
+    border-right: 20px solid transparent;
+    @media (min-width: @screen-sm-min) and (max-width: @screen-md-min){
+      left: 20px;
+      top: 10px;
+      height: 53px;
+      border-right: 36px solid transparent;
+    }
+    @media (min-width: 0) and (max-width: @screen-sm-min){
+      left: 16px;
+      top: 6px;
+      height: 53px;
+      border-right: 0px solid transparent;
+    }
+  }
+  &__description{
+    padding: 0 10px;
+    font-weight: 700;
+    @media (min-width: 0) and (max-width: @screen-md-min){
+      display: none;
+    }
+  }
+  &__source{
+    padding: 0 10px;
+    font-weight: 400;
+    color: #acacac;
+    @media (min-width: 0) and (max-width: @screen-md-min){
+      display: none;
+    }
+  }
+}
